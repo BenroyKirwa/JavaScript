@@ -1,0 +1,161 @@
+body {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+  header{
+    top: 0;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+  }
+
+  footer{
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+  }
+
+ 
+  .overview {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Makes scrolling smooth */
+    gap: 10px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome & Safari */
+}
+
+.item {
+    min-width: 200px;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#nextBtn{
+    margin: 30px;
+}
+
+#prevBtn{
+    margin: 30px;
+}
+
+button:hover {
+    background: gray;
+}
+
+.courseTable {
+    background-color: #ffffff; /* White for clarity */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+td:nth-child(2) { /* Targets the DESCRIPTION column */
+    width: 60%; /* Makes sure the description has enough space */
+    word-wrap: break-word; /* Breaks long words */
+    white-space: normal; /* Ensures wrapping */
+}
+
+li{
+    text-align: left;
+}

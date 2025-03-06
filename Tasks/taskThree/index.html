@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Six</title>
+    <link rel="stylesheet" href="CSS/task-3.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/tasks/index.html">HOME</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskOne/index.html">TASK 1</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskTwo/index.html">TASK 2</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskThree/index.html" style="color: whitesmoke;">TASK 3</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskFour/index.html">TASK 4</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskFive/index.html">TASK 5</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskSix/index.html">TASK 6</a>
+    </div>
+
+    <button onclick="openNav()" id="menuButton">>></button>
+
+    <div id="main">
+        <header>
+            <h1>Task 3</h1>
+        </header>
+
+        <main>
+            <div>
+                <input id="input" type="text" placeholder="Enter your text">
+                
+                <label for="operations">Choose an operation:</label>
+                <select id="operations" onchange="showLimitInput()">
+                    <option value="reverse">Reverse String</option>
+                    <option value="vowels">Count Vowels</option>
+                    <option value="truncate">Truncate</option>
+                </select> 
+            
+                <input id="limitInput" type="number" placeholder="Limit" style="display: none; width: 80px; margin-left: 10px;">
+                
+            </div>
+            
+            <button onclick="processString()">Submit</button>
+                
+            <p id="resultText"></p>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Benroy Kirwa</p>
+        </footer>
+    </div>
+
+    <script src="JS/task-3.js"></script>
+</body>
+</html>

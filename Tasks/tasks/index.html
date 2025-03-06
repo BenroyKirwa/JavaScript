@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/tasks/index.html" style="color: whitesmoke;">HOME</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskOne/index.html">TASK 1</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskTwo/index.html">TASK 2</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskThree/index.html">TASK 3</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskFour/index.html">TASK 4</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskFive/index.html">TASK 5</a>
+        <a href="/home/benroy-kirwa/Documents/JavaScript/Tasks/taskSix/index.html">TASK 6</a>
+    </div>
+      
+      <button onclick="openNav()">>></button>
+      
+    <div id="main">
+
+        <header>
+            <h1>Tasks</h1>
+        </header>
+        
+        <main>
+
+            <h1>Welcome to the JavaScript Course Task Tracker!</h1>
+            <p>This project showcases all assigned tasks and their descriptions for the Sky World JavaScript course. Navigate through the sidebar to explore each task in detail.
+            </p>
+            
+            <div class="overview">
+                <h4>Course Overview</h4>
+                <p>The course a variety of javascript concepts from JS Datatypes to Error Handling!</p>
+                <p>Below is as brief overview of the topics to be covered:</p>
+
+                <div class="carousel-container">
+                    <button id="prevBtn">❮</button>
+                    <div class="carousel">
+                        <div class="item">
+                            <p>Introduction</p>
+                            <ul>
+                                <li>Variables</li>
+                                <li>Interaction</li>
+                                <li>Type Convertions</li>
+                                <li>Basic Operations</li>
+                                <li>Operators</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>Data Types</p>
+                            <ul>
+                                <li>Methods of primitives</li>
+                                <li>Numbers</li>
+                                <li>Strings</li>
+                                <li>Arrays</li>
+                                <li>Iterables</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>Advanced Functions</p>
+                            <ul>
+                                <li>Reccurssion and Stacks</li>
+                                <li>REST parameters</li>
+                                <li>Variable scope and closure</li>
+                                <li>Global Object</li>
+                                <li>Function Binding</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>Objects : basics</p>
+                            <ul>
+                                <li>Objects</li>
+                                <li>Object referencing and copying</li>
+                                <li>Garbage Collection</li>
+                                <li>Object methods</li>
+                                <li>Constructors, operator "new"</li>
+                                <li>Optional chaining '?'</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>Prototypes and Error Handling</p>
+                            <ul>
+                                <li>Prototypal inheritance</li>
+                                <li>F.Prototype</li>
+                                <li>Native prototypes</li>
+                                <li>Prototype methods</li>
+                                <li>Object without __proto__]</li>
+                                <li> Error Handling</li>
+                                <li>Custom Errors and extending Error</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>PPromises and Async/Await</p>
+                            <ul>
+                                <li>Introduction : callbacks</li>
+                                <li>Promise</li>
+                                <li>Promise chaining</li>
+                                <li>Error handling with promises</li>
+                                <li>Promise API</li>
+                                <li> Microtasks</li>
+                                <li>Async/Await</li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <p>Generators, Advanced Iteration and Modules</p>
+                            <ul>
+                                <li>Generators</li>
+                                <li>Async Iteration and Generation</li>
+                                <li>Modules Introduction</li>
+                                <li>Export and Import</li>
+                                <li>Dynamic Impors</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <button id="nextBtn">❯</button>
+                </div>
+
+            </div>
+
+            <div class="courseTable">
+                <table id="table">
+                    <tr>
+                        <th>TASK</th>
+                        <th>DESCRIPTION</th>
+                        <th>STATUS</th>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>It aims to learn about several primitive and reference data types. For this task, I will create validation functions for different JavaScript data types</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Task 2</td>
+                        <td>It aims to learn about five common cases: camelCase, snakecase, kebab-case, PascalCase and UPPER_CASE_SNAKE_CASE. For this task, I Wrote a function that takes in a sentence and a desired case as the inputs, and then converts the sentence into the desired case</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Task 3</td>
+                        <td>It aims to learn about a set of string utility functions to manipulate text in different ways</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Task 4</td>
+                        <td>It aims to learn how to manipulate strings to create a string's initials in capital</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Task 5</td>
+                        <td>It aims to learn about password verification where it analyzes a password and returns a rating of its security level</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>Task 6</td>
+                        <td>It aims to learn about implementing array manipulation functions without using JavaScript's built-in array methods</td>
+                        <td>Done</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Benroy Kirwa </p>
+        </footer>
+    </div> 
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>
